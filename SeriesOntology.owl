@@ -1,0 +1,647 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/miriam/ontologies/2022/3/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/miriam/ontologies/2022/3/untitled-ontology-5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology">
+        <rdfs:comment>Ontology Name : SeriesOntology
+
+autor: Miriam López González</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_Seasons -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_Seasons">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Number_Of_Seasons"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_location">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_staff -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_staff">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_visualization_platform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_visualization_platform">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Visualization_Platform"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Number_Of_Seasons"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#is_published -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#is_published">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Genre"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_staff"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Risc_Specialist"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>the main story context has scenes wich contains speed, violence...</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Actors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Actors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff"/>
+        <rdfs:comment>the differents characters that appear in the scenes of the serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Indoors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Cameraman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Cameraman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff"/>
+        <rdfs:comment>person who is in charge of the images and scenes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Outdoors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Nature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Coffeshop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Coffeshop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Indoors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Hospital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Comedy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Comedy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Genre"/>
+        <rdfs:comment>theme is based on funny situations between the different subjects</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Location"/>
+        <rdfs:comment>the geografical location of a sceen shot</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Category:Television_shows_filmed_in_Spain</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Crime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Crime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Genre"/>
+        <rdfs:comment>the story contains a murder and a police investigation</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Criminal:_Spain</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff"/>
+        <rdfs:comment>the main responsable of every creative aspect or decision in the serie/work</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+        <rdfs:comment>theme</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Hospital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Indoors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Indoors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Indoors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Location"/>
+        <rdfs:comment>scenes shot in a building (different rooms)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Internet_Series -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Internet_Series">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Visualization_Platform"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Tv_series"/>
+        <rdfs:comment>series that you only can see in internet platforms like HBO, Netflix..</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Lead_Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Lead_Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Actors"/>
+        <rdfs:comment>the main actor/actors that guide the story</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Love -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Love">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Genre"/>
+        <rdfs:comment>the story talks about the relationship between different characters, a story of love</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Makeup_Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Makeup_Artist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff"/>
+        <rdfs:comment>person that make up the different characters</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Nature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Nature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Outdoors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Number_Of_Episodes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Number_Of_Episodes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Number_Of_Seasons"/>
+        <rdfs:comment>every single episode in which is divided the story</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Number_Of_Seasons -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Number_Of_Seasons">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+        <rdfs:comment>a serie is formed by different seasons , which contains different number of episodes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Outdoors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Outdoors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Location"/>
+        <rdfs:comment>scenes shot in the outside of a building (nature, streets..)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff"/>
+        <rdfs:comment>person who is in charge of the legal aspects like hire staff or financing the work. Works coordinate with the director</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Indoors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Risc_Specialist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Risc_Specialist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Secondary_Actor"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#extras"/>
+        <rdfs:comment>person who replaces  the main actor or other in scenes that have risk for the main actor or other actors of the serie. They are proffesionally prepared for that work</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Indoors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Science_Fiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Science_Fiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Genre"/>
+        <rdfs:comment>the story is based in the posible consecuences or hipothetic caused by scientific o tecnologycal inventions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Screen_Writer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Screen_Writer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff"/>
+        <rdfs:comment>person who is in charge of the dialogues of the diferent characters</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Secondary_Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Secondary_Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Actors"/>
+        <rdfs:comment>actors that take part in the story with the main actor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#has_name"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#is_published"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>audiovisual work that you can see usually in television, divided in diferent chapters o episodes that have a thematic o argumental continuity.</rdfs:comment>
+        <rdfs:sameAs>https://dbpedia.org/page/Game_of_Thrones
+https://dbpedia.org/page/Series</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+        <rdfs:comment>the different components/persons that work in a serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Sound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Sound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff"/>
+        <rdfs:comment>person who is in charge of the sound quality or effects</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Supporting_Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Supporting_Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Actors"/>
+        <rdfs:comment>actor that appears in the scene but don&apos;t have dialogue</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Tv_series -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Tv_series">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Visualization_Platform"/>
+        <rdfs:comment>series that you can watch on tv</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Visual_Effects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Visual_Effects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff"/>
+        <rdfs:comment>person who is in charge of the pictures or special effects in the different scenes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Visualization_Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Visualization_Platform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+        <rdfs:comment>the platform where you can see the serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Wardrobe_Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Wardrobe_Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie_Staff"/>
+        <rdfs:comment>person who is in charge of the clothes that need to put on the different actors</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#extras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#extras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Secondary_Actor"/>
+        <rdfs:comment>persons who appear walking behind the actors or are in background</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Game_of_Thrones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Game_of_Thrones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Science_Fiction"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#hbo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#hbo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Internet_Series"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#mountains -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#mountains">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Nature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#public_television -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#public_television">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Tv_series"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#specialist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#specialist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Risc_Specialist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Serie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Number_Of_Episodes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Number_Of_Seasons"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Comedy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Crime"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Love"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Science_Fiction"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Actors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Cameraman"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Director"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Makeup_Artist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Producer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Screen_Writer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Sound"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Visual_Effects"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Wardrobe_Manager"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Building"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Coffeshop"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Hospital"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Restaurant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#School"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Cameraman"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Director"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Makeup_Artist"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Producer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Screen_Writer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Sound"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Visual_Effects"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Wardrobe_Manager"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Country"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Indoors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Outdoors"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Lead_Actor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Secondary_Actor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/miriam/ontologies/2022/3/SeriesOntology#Supporting_Actor"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
